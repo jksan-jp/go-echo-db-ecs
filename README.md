@@ -18,3 +18,11 @@ docker build -t go-echo-db-ecs .
 ```
 $ hadolint ./Dockerfile
 ```
+
+### docker run
+```
+$ docker run -p 8080:1323 -d -t go-echo-db-ecs       
+79d7bdcb3ad8e114fbc4c165da3a0a0f3fe858f16c7ed04e2159336ca0360277
+$ curl localhost:8080
+Hello, World!⏎    
+```
